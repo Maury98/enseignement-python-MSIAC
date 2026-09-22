@@ -1,0 +1,44 @@
+# Environnements virtuels
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Modeles et artefacts (on ne versionne pas les binaires lourds)
+*.joblib
+*.pkl
+*.pth
+*.pt
+
+# Donnees volumineuses
+# (le CSV du cours fait 500 Ko, il est versionne ; au-dela de quelques Mo, ne
+#  versionnez pas vos donnees : mettez un script qui les telecharge)
+*.parquet
+data/raw/
+data/large/
+
+# Secrets : JAMAIS dans un depot, meme prive
+.env
+*.key
+*.pem
+credentials*
+secrets*
+
+# Systeme
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editeurs
+.vscode/
+.idea/
+*.swp
